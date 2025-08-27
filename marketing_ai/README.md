@@ -12,7 +12,13 @@ First, if you haven't already, install uv:
 pip install uv
 ```
 
-Next, navigate to your project directory and install the dependencies:
+Install fpdf2. This is required for generating the pdf
+
+```bash
+pip install fpdf2
+```
+
+Next, navigate to your project directory (marketing_ai) and install the dependencies:
 
 (Optional) Lock the dependencies and install them by using the CLI command:
 ```bash
@@ -20,7 +26,7 @@ crewai install
 ```
 ### Customizing
 
-**Add your `OPENAI_API_KEY` into the `.env` file**
+**Add your `OPENAI_API_KEY` and `SERPER_API_KEY` into the `.env` file**
 
 - Modify `src/marketing_ai/config/agents.yaml` to define your agents
 - Modify `src/marketing_ai/config/tasks.yaml` to define your tasks
@@ -37,7 +43,11 @@ $ crewai run
 
 This command initializes the marketing-ai Crew, assembling the agents and assigning them tasks as defined in your configuration.
 
-This example, unmodified, will run the create a `report.md` file with the output of a research on LLMs in the root folder.
+This example, unmodified, will run the create an `output` folder under the project directory.
+You can find 3 json files in this folder: `trends.json`, `strategy.json` and `campaigns.json`. 
+These files are the outputs of the agents at each stage.
+The `campaigns.pdf` file with the output of a research on LLMs is also generated in the `output` folder.
+The PDF report provides the details of the campaign.
 
 ## Understanding Your Crew
 
