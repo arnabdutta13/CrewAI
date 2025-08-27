@@ -41,6 +41,10 @@ $ crewai run
 
 This command initializes the marketing-ai Crew, assembling the agents and assigning them tasks as defined in your configuration.
 
+When the application runs, it will ask you for the topics you want to do a research on:
+`Please enter the topics you want to research (comma-separated): `
+At this point enter the topics, e.g. `food, travel, shopping`
+
 This application will run the create an `output` folder under the project directory.
 You can find 3 json files in this folder: `trends.json`, `strategy.json` and `campaigns.json`. 
 These files are the outputs of the agents at each stage.

@@ -17,8 +17,14 @@ def run():
     """
     Run the crew.
     """
+    print("Please enter the topics you want to research (comma-separated): ")
+    input_topics = input().strip()
+    if input_topics == "":
+        print("No topics provided. Exiting.")
+        return
+    #'food, travel, shopping'
     inputs = {
-        'topic': 'food, travel, shopping',
+        'topic': input_topics,
     }
     
     try:
