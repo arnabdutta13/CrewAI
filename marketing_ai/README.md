@@ -26,7 +26,7 @@ crewai install
 ```
 ### Customizing
 
-**Note that the application uses SerperDevAPI for the web search. Ensure that you have a API key for [Serper](https://serpapi.com/)** 
+**Note that the application uses SerperDevAPI for the web search. Ensure that you have a API key for [Serpapi](https://serpapi.com/)** 
 
 **Add your `OPENAI_API_KEY` and `SERPER_API_KEY` into the `.env` file**
 
