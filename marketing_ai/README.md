@@ -45,7 +45,7 @@ These files are the outputs of the agents at each stage.
 The `campaigns.pdf` file with the output of a research on LLMs is also generated in the `output` folder.
 The PDF report provides the details of the campaign.
 
-## Understanding Your Crew
+## Understanding the Marketing AI Crew
 
 The marketing-ai Crew is composed of multiple AI agents, each with unique roles, goals, and tools. These agents collaborate on a series of tasks, defined in `config/tasks.yaml`, leveraging their collective skills to achieve complex objectives. The `config/agents.yaml` file outlines the capabilities and configurations of each agent in the crew.
 
